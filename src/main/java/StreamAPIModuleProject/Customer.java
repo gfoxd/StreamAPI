@@ -27,4 +27,18 @@ public class Customer {
         return level;
     }
 
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", level=" + level +
+                ", orders=" + orders +
+                "}\n";
+    }
+
 }

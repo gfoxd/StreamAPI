@@ -27,8 +27,18 @@ public class Product {
         return category;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public int getPrice() {
+        return price.intValue();
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", price=" + price +
+                "}\n";
     }
 
 }
